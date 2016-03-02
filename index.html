@@ -1,0 +1,160 @@
+---
+layout: index
+script: index.js
+---
+
+<div class="herobar">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="lead">St. Laurences Anglican Church is something something blah blah
+        </p>
+				<p class="lead">More words need to go here</p>
+				
+				<div class="btn-group">
+          <a href="/join.html" class="btn btn-danger btn-lg">Service Times</a>
+          <a href="/about.html" class="btn btn-warning btn-lg">Learn More</a>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div id="heroCarousel" class="carousel slide">
+				  <ol class="carousel-indicators">
+					<li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#heroCarousel" data-slide-to="1"></li>
+					<li data-target="#heroCarousel" data-slide-to="2"></li>
+          <li data-target="#heroCarousel" data-slide-to="3"></li>
+          <li data-target="#heroCarousel" data-slide-to="4"></li>
+          <li data-target="#heroCarousel" data-slide-to="5"></li>
+          <li data-target="#heroCarousel" data-slide-to="6"></li>
+          <li data-target="#heroCarousel" data-slide-to="7"></li>
+          <li data-target="#heroCarousel" data-slide-to="8"></li>
+          <li data-target="#heroCarousel" data-slide-to="9"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+					<div class="active item"><img src="/assets/img/carousel1.jpg" /></div>
+					<div class="item"><img src="/assets/img/carousel2.jpg" /></div>
+					<div class="item"><img src="/assets/img/carousel3.jpg" /></div>
+          <div class="item"><img src="/assets/img/carousel4.jpg" /></div>
+          <div class="item"><img src="/assets/img/carousel5.jpg" /></div>
+          <div class="item"><img src="/assets/img/carousel6.jpg" /></div>
+          <div class="item"><img src="/assets/img/carousel7.jpg" /></div>
+          <div class="item"><img src="/assets/img/carousel8.jpg" /></div>
+          <div class="item"><img src="/assets/img/carousel9.jpg" /></div>
+          <div class="item"><img src="/assets/img/carousel10.jpg" /></div>
+
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-offset-1 col-md-2">
+      <h3>Get Involved!</h3>
+      <ul class="list-unstyled">
+        <li class="list-unstyled">
+          <a href="/thespace.html">
+            <i class="glyphicon glyphicon-map-marker"></i>
+            Visit the church
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="http://forum.hsbne.org/">
+            <i class="glyphicon glyphicon-comment"></i>
+            Discuss on our forums
+            <sup><i class="icon-external-link"></i></sup>
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="http://webchat.freenode.net/?channels=hsbne&uio=Mj10cnVlJjQ9dHJ1ZSY5PXRydWUmMTA9dHJ1ZQ75">
+            <i class="glyphicon glyphicon-comment"></i>
+            Talk on IRC
+            <sup><i class="icon-external-link"></i></sup>
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="http://trello.com/hsbneinc">
+            <i class="glyphicon glyphicon-tasks"></i>
+            Participate on Trello
+            <sup><i class="icon-external-link"></i></sup>
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="http://www.facebook.com/Anglican-Parish-of-Caboolture-866631260082269">
+            <i class="icon-fixed-width icon-facebook-sign"></i>
+            Join us on Facebook
+            <sup><i class="icon-external-link"></i></sup>
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="http://www.twitter.com/HSBNE">
+            <i class="icon-fixed-width icon-twitter-sign"></i>
+            Follow us on Twitter
+            <sup><i class="icon-external-link"></i></sup>
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="http://porthack.hsbne.org:52169">
+            <i class="icon-fixed-width icon-facetime-video"></i>
+            View the Space Webcam
+            <sup><i class="icon-external-link"></i></sup>
+          </a>
+        </li>
+      </ul>
+
+      <h3>Events</h3>
+      <ul class="nav nav-list">
+        <div id="gcf-events" style="width: 100%; height: 180px;">
+        <div class="gcf-item-container-block">
+        <div class="gcf-item-block">
+
+        <li class="gcf-item-title-block">
+          <span class="gcf-item-daterange"></span>
+          <a class="gcf-item-title">Item Title of each event</a>
+        </li>
+
+        </div>
+    </div>
+  </div>
+
+		<div class="col-md-7 col-xs-offset-1">
+			<h3>Blog</h3>
+      <div id="blogfeed">
+      </div>
+      
+      <script type="text/template" id="post_regular">
+        <a href="<%= data['url-with-slug'] %>"><h4><%= data['regular-title'] %></h4></a>
+        <%= data['regular-body'] %>
+        <hr />
+      </script>
+      <script type="text/template" id="post_quote">
+        <a href="<%= data['url-with-slug'] %>"><h4><%= data['quote-text'] %></h4></a>
+        <strong> - <%= data['quote-source'] %></strong>
+        <hr />
+      </script>
+      <script type="text/template" id="post_link">
+        <h4><%= data['link-text'] %></h4>
+        <a href="<%= data['link-url'] %>"><%= data['link-description'] %></a>
+        <hr />
+      </script>
+      <script type="text/template" id="post_video">
+        <a href="<%= data['url-with-slug'] %>"><h4><%= data['regular-title'] %></h4></a>
+        <%= data['video-player-500'] %>
+        <p class="text-nowrap"><%= data['video-caption'] %></p>
+
+        <hr />
+      </script>
+      <script type="text/template" id="post_photo">
+        <a href="<%= data['url-with-slug'] %>">
+        <img src="<%= data['photo-url-500'] %>" /></a>
+        <p class="text-justify"><%= data['photo-caption'] %></p>
+        <hr />
+      </script>
+<!--       <h4><a href="http://blog.hsbne.org/">Read more posts on our blog!</a></h4>
+ -->    </div>
+  </div>
+</div>
