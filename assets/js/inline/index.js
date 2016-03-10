@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(function() { $('#gcf-events').gCalFlow({
-  calid: '03ljo8g8a9kkq8dohbb7f14sok@group.calendar.google.com',
+  calid: '2rsavfn5kuvo1l7gcs16oi4@group.calendar.google.com',
   maxitem: 7,
   auto_scroll: false,
     daterange_formatter: function (start_date, end_date, allday_p) {
