@@ -1,9 +1,9 @@
 permalink: /blog/:year/:month/:day/:title
 description: ""
-title: "HSBNE"
-title_long: "Hackerspace Brisbane"
-title_legal: "HSBNE Inc"
-hostname: "hsbne.org"
+title: "St. Laurences Anglican Church"
+title_long: "St. Laurences Anglican Church"
+title_legal: "St. Laurences Anglican Church"
+hostname: "cabooltureanglican.org.au"
 exclude: ['bin']
 markdown: kramdown
 gems:
